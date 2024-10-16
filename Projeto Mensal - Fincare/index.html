@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <button class="menu-button" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar">
+        <ul>
+            <li>Dashboard</li>
+            <li>Movimentações</li>
+            <li>Contas a Receber</li>
+            <li>Contas a Pagar</li>
+            <li>Projetos</li>
+            <li>Orçamentos</li>
+            <li>Relatórios</li>
+            <li>Cadastros</li>
+            <li>Serviços</li>
+            <li>Clientes</li>
+            <li>Configurações</li>
+        </ul>
+        <footer>Versão 24.09 - 1.0</footer>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="header-content">
+                <input type="text" placeholder="Buscar...">
+                <div class="icons">
+                    <span>🔔</span>
+                    <span>❓</span>
+                    <span>👤</span>
+                </div>
+            </div>
+        </header>
+        <section class="dashboard">
+            <h2>FRuxo de caxha</h2>
+            <canvas id="cashFlowChart"></canvas>
+            <h2>Resultado do mês</h2>
+            <canvas id="monthResultChart"></canvas>
+        </section>
+    </div>
+    <script src="Json.js"></script>
+</body>
+</html>
